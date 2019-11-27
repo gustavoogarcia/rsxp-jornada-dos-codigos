@@ -6,6 +6,7 @@ import DesignLesson from './Pages/DesignLesson';
 import Ranking from './Pages/Ranking/Ranking';
 import Login from './Pages/Login/Login';
 import { useSelector } from 'react-redux';
+import ListLessons from './Pages/ListLessons';
 
 export default function Routes() {
 
@@ -15,6 +16,7 @@ export default function Routes() {
     <Switch>
       <Route exact path="/" component={isLoggedIn ? Home : Login} />
       {isLoggedIn ? <Route path="/code-lesson" component={CodeLesson} /> : <Redirect to={"/"} />}
+      {isLoggedIn ? <Route path="/list-lesson" component={ListLessons} /> : <Redirect to={"/"} />}
       {isLoggedIn ? <Route path="/design-lesson" component={DesignLesson} /> : <Redirect to={"/"} />}
       {isLoggedIn ? <Route path="/ranking" component={Ranking} /> : <Redirect to={"/"} />}
     </Switch>

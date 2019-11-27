@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Header from '../Components/Ranking/RankingHeader';
-import RankingList from '../Components/Ranking/RankingList';
-import { getRankingList } from '../store/actions/rankingActions'
-import Tab from '../Components/Tab';
+import Header from './RankingHeader';
+import RankingList from './RankingList';
+import { getRankingList } from '../../store/actions/rankingActions'
+import Tab from '../../Components/Tab';
 
 export default function Ranking() {
     const dispatch = useDispatch();

@@ -1,0 +1,65 @@
+.field {
+  position: relative;
+  margin-bottom: 40px;
+
+  label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: "Bree Serif", sans-serif;
+    color: gray;
+    font-size: 18px;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: transparent;
+    font-family: "Bree Serif", sans-serif;
+    border: 1px solid gray;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.inputInFocus {
+    label {
+      font-size: 14px;
+      transform: translate(-10px, -35px);
+    }
+
+    &:before {
+      width: 100%;
+    }
+  }
+
+  .message {
+    color: white;
+    font-size: 10px;
+    top: -30px;
+    right: 0;
+    position: absolute;
+    background-color: #d20808;
+    font-family: "Bree Serif", sans-serif;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 50px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: #d20808;
+      position: absolute;
+      top: 19px;
+      left: 12px;
+      transform: rotate(45deg);
+    }
+  }
+}

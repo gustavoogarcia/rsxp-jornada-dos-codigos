@@ -12,7 +12,7 @@ export default function RankingHeader({ viewBy, setViewBy }) {
             <div className="rankingHeaderButtons">
                 <button className="backButton" onClick={() => history.push("/")}>Voltar</button>
                 <button className="changeButton" onClick={() => setViewBy(viewBy === "school" ? "student" : "school")} >
-                    {viewBy === "school" ? "Ver por escola" : "Ver por usuário"}
+                    {viewBy === "school" ? "Ver por alunos" : "Ver por escolas"}
                 </button>
             </div>
             <h1 className="rankingHeaderTitle">Ranking por {viewBy === "school" ? "Escolas" : "Alunos"}</h1>

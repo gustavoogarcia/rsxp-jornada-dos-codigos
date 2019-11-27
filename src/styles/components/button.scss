@@ -1,0 +1,14 @@
+.button {
+  background-color: $green;
+  color: white;
+  font-family: "Bree Serif", sans-serif;
+  padding: 10px 50px;
+  font-size: 14px;
+  border-radius: 30px;
+  margin: auto;
+  display: block;
+
+  &:hover, &:focus {
+    background-color: $darkGreen;
+  }
+}

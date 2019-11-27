@@ -1,6 +1,8 @@
-export const getUser = () => dispatch => {
+export const signIn = () => dispatch => {
     const user = { 
+        isLoggedIn: true,
         id: 1,
+        name: "Gustavo Garcia",
         position: 76, 
         avatar: "", 
         points: 789, 
@@ -10,6 +12,10 @@ export const getUser = () => dispatch => {
             avatar: "", 
             points: 13789 } 
     };
-
+    window.localStorage.setItem("user", JSON.stringify(user))
     dispatch({ type: "SET_USER", user });
+}
+
+export const unsetUser = () => dispatch => {
+    dispatch({ type: "UNSET_USER" });
 }

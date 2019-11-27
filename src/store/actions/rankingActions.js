@@ -8,6 +8,8 @@ export const getRankingList = target => dispatch => {
         { id: 6, position: 6, avatar: '', name: `${target}6`, points: 274543 },
         { id: 7, position: 7, avatar: '', name: `${target}7`, points: 253424 },
         { id: 8, position: 8, avatar: '', name: `${target}8`, points: 223656 },
+        { id: 9, position: 9, avatar: '', name: `${target}9`, points: 223656 },
+        { id: 10, position: 10, avatar: '', name: `${target}10`, points: 223656 },
     ];
     dispatch({ type: "SET_RANKING_LIST", rankingList })
 }

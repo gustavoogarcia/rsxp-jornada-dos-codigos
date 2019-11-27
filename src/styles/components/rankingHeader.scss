@@ -1,0 +1,100 @@
+.rankingHeader {
+    background-color: $green;
+  
+    .rankingHeaderTitle {
+      color: white;
+      font-family: "Bree Serif", sans-serif;
+      text-align: center;
+      max-width: 600px;
+      margin: auto auto 20px;
+    }
+  
+    .rankingHeaderButtons {
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+      button {
+        color: white;
+        font-size: 20px;
+        font-family: "Lato", sans-serif;
+  
+        &.backButton {
+          &:hover, &:focus {
+            color: $lightGreen;
+            &:before {
+              content: "";
+              border-top-color: $lightGreen;
+              border-left-color: $lightGreen;
+            }
+          }
+  
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-top: 3px solid white;
+            border-left: 3px solid white;
+            transform: rotate(-45deg);
+          }
+        }
+  
+        &.changeButton {
+            background-color: #fff;
+            border-radius: 50px;
+            color: #343f4b;
+            font-size: 12px;
+            padding: 7px 20px;
+  
+            &:hover, &:focus {
+              background-color: $lightGreen;
+            }
+        }
+      }
+    }
+  
+    .rankingInfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0 20px 30px;
+      max-width: 600px;
+      margin: auto;
+  
+      .rankingPosition {
+        text-align: center;
+        color: white;
+        font-family: "Bree Serif", sans-serif;
+        font-size: 40px;
+        place-self: center;
+  
+        span {
+          text-decoration: solid;
+        }
+      }
+  
+      .rankingAvatar {
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        border-radius: 50%;
+        margin: auto;
+      }
+  
+      .rankingPoints {
+        text-align: center;
+        color: white;
+        font-family: "Bree Serif", sans-serif;
+        font-size: 26px;
+        line-height: 24px;
+        place-self: center;
+        display: flex;
+        flex-direction: column;
+  
+        span {
+          font-size: 13px;
+        }
+      }
+    }
+  }

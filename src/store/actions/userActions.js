@@ -2,9 +2,9 @@ export const signIn = () => dispatch => {
     const user = { 
         isLoggedIn: true,
         id: 1,
-        name: "Gustavo Garcia",
-        position: 76, 
-        avatar: "", 
+        name: "Adam",
+        position: 1, 
+        avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg", 
         points: 789, 
         scholl: { 
             id: 1,

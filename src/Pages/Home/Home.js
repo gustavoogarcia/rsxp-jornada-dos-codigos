@@ -4,13 +4,14 @@ import { useHistory } from 'react-router-dom';
 import designImg from '../../imgs/design.svg';
 import teamwork from '../../imgs/teamwork.svg';
 import rankingImg from '../../imgs/ranking.svg';
+import coding from '../../imgs/coding.svg';
 
 export default function Home() {
     const history = useHistory();
     const homeItems = [
-        { label: "Lições de Códigos", link: "/code-lesson", imgURL: "" },
-        { label: "Lições de Design", link: "/code-lesson", imgURL: designImg },
-        { label: "Lições de Gestão", link: "/code-lesson", imgURL: teamwork },
+        { label: "Lições de Gestão", link: "/list-lesson", imgURL: teamwork },
+        { label: "Lições de Códigos", link: "/list-lesson", imgURL: coding },
+        { label: "Lições de Design", link: "/list-lesson", imgURL: designImg },
         { label: "Ranking", link: "/ranking", imgURL: rankingImg },
     ]
 

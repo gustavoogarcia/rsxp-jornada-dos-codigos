@@ -3,6 +3,7 @@ import AceEditor from "react-ace";
 import '../styles/CodeLesson.scss';
 import "ace-builds/src-noconflict/mode-html";
 import "ace-builds/src-noconflict/theme-github";
+import HomeHeader from './Home/HomeHeader';
 
 import { Icon, Button, PageHeader, Input, Divider, Select } from 'antd';
 
@@ -13,14 +14,7 @@ export default function CodeLesson({ history }) {
     const [code, setCode] = useState('');
     return (
         <>
-        <PageHeader
-            style={{
-            border: '1px solid rgb(235, 237, 240)',
-            background: '#7baa4a'
-            }}
-            onBack={() => history.push('/design-lesson')}
-            title="Enviar solução"
-        />
+        <HomeHeader/>
         <div className="container">
             <div className="container-inputs">
                 <Input placeholder="Número da lição" disabled value="01"/>
@@ -45,7 +39,7 @@ export default function CodeLesson({ history }) {
                 <Button 
                     size="large" 
                     style={{ background: '#7baa4a', marginTop: '20px', width: '90%'}}
-                    onClick={() => history.push('/list-lessons')}
+                    onClick={() => history.push('/list-lesson')}
                 >
                    Enviar <Icon type="check" />
                 </Button>

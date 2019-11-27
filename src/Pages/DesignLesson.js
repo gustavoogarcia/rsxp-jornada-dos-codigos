@@ -1,18 +1,12 @@
 import React from 'react';
 import { PageHeader, Divider, Card, Button} from 'antd';
 import '../styles/DesignLesson.scss';
+import HomeHeader from './Home/HomeHeader';
 
 export default function DesignLesson({ history }) {
   return (
     <>
-       <PageHeader
-            style={{
-            border: '1px solid rgb(235, 237, 240)',
-            background: '#7baa4a'
-            }}
-            onBack={() => history.push('/list-lessons')}
-            title="Descrição do exercício"
-        />
+       <HomeHeader/>
         <div className="title">
           <p> Jornada dos códigos | 01</p>
           <h1> Soma Simples </h1>

@@ -6,6 +6,7 @@ import Home from './Pages/Home';
 import CodeLesson from './Pages/CodeLesson';
 import DesignLesson from './Pages/DesignLesson';
 import Ranking from './Pages/Ranking';
+import ListLessons from './Pages/ListLessons';
 
 export default function Routes() {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ export default function Routes() {
   return (
     <>
       <Switch>
+        <Route path="/list-lessons" component={ListLessons} />
         <Route path="/code-lesson" component={CodeLesson} />
         <Route path="/design-lesson" component={DesignLesson} />
         <Route path="/ranking" component={Ranking} />

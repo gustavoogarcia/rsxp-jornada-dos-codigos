@@ -1,15 +1,21 @@
 import React from 'react';
 import { PageHeader } from 'antd';
+import Icon6 from '../imgs/final.png';
+import Icon5 from '../imgs/5.png'
+import Icon4 from '../imgs/4.png'
+import Icon3 from '../imgs/3.png'
+import Icon2 from '../imgs/2.png'
+import Icon1 from '../imgs/1.png'
 import '../styles/ListLessons.scss';
 
 export default function ListLessons({ history }) {
   const exercices = [
-    { label: "teste1", imgURL: "", link: "/"},
-    { label: "teste2", imgURL: "", link: "/"},
-    { label: "teste3", imgURL: "", link: "/"},
-    { label: "teste4", imgURL: "", link: "/"},
-    { label: "teste5", imgURL: "", link: "/"},
-    { label: "teste6", imgURL: "", link: "/"},    
+    { label: "Exercício 1", imgURL: Icon1, link: "/"},
+    { label: "Exercício 2", imgURL: Icon2, link: "/"},
+    { label: "Exercício 3", imgURL: Icon3, link: "/"},
+    { label: "Exercício 4", imgURL: Icon4, link: "/"},
+    { label: "Exercício 5", imgURL: Icon5, link: "/"},
+    { label: "Desafio", imgURL: Icon6, link: "/"},    
   ]
   return (
     <>

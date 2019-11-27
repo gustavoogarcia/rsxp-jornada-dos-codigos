@@ -42,7 +42,11 @@ export default function CodeLesson({ history }) {
                     editorProps={{ $blockScrolling: true }}
                 />
             <div className="invite-button">
-                <Button size="large" style={{ background: '#7baa4a', marginTop: '20px', width: '90%'}}>
+                <Button 
+                    size="large" 
+                    style={{ background: '#7baa4a', marginTop: '20px', width: '90%'}}
+                    onClick={() => history.push('/list-lessons')}
+                >
                    Enviar <Icon type="check" />
                 </Button>
             </div>
